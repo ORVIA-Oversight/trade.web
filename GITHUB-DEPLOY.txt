@@ -1,0 +1,15 @@
+ORVIA WEB - HARRISON TRADE DEMO
+
+UPLOAD THESE FILES TO THE ROOT OF YOUR GITHUB REPOSITORY.
+Do not upload the containing folder itself.
+
+Vercel settings:
+Framework Preset: Other
+Root Directory: leave blank / repository root
+Build Command: leave blank
+Output Directory: leave blank
+
+Production domain:
+https://trade.web.orvia.org.uk/
+
+The homepage is index.html at repository root.
