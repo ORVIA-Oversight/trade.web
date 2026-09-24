@@ -143,3 +143,6 @@ a{color:inherit}button,input,select,textarea{font:inherit}.container{width:min(c
 @media(max-width:390px){
   .hero--photo .hero-photo img{object-position:66% center}.hero--photo h1{font-size:46px}.hero--photo .hero-panel{display:none}.hero-demo-note{margin-top:20px}.service-image{aspect-ratio:1.55/1}.area-map--svg svg{min-height:300px}.map-node text{font-size:19px}.map-node.minor text{font-size:14px}
 }
+
+/* Harrison showcase film */
+.harrison-film{background:#fff}.harrison-film__grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:58px;align-items:center}.harrison-film__copy>p:not(.kicker):not(.harrison-film__flow){color:var(--muted);max-width:560px;font-size:17px}.harrison-film__flow{display:inline-block;margin:10px 0 22px;padding:8px 11px;border:1px solid var(--line);font:800 11px/1.2 Manrope,sans-serif;letter-spacing:.1em;color:var(--slate)}.harrison-film__frame{background:#0a1b21;border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}.harrison-film__frame video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#0a1b21}@media(max-width:900px){.harrison-film__grid{grid-template-columns:1fr;gap:28px}}@media(max-width:390px){.harrison-film__copy>p:not(.kicker):not(.harrison-film__flow){font-size:15px}.harrison-film__frame{border-radius:12px}}
