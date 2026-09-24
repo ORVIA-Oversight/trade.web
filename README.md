@@ -70,3 +70,9 @@ Not required for the public demo. If persistent demo data is added later, use pe
 ## Indexing
 
 The site is deliberately `noindex, nofollow`; `robots.txt` disallows crawling because Harrison is fictional.
+
+## Phase 2 refinement
+
+This package includes the Phase 2 showcase refinement requested for the Harrison trade demo. It retains the original working customer-to-Job-Desk flow and adds photographic demonstration imagery, responsive image `srcset`, a custom South Yorkshire diagram, accessible gallery lightbox with previous/next and swipe support, richer postcode demonstration, photo preview/removal in the enquiry form, quote-attachment feedback, mobile Job Desk bottom navigation, and the ORVIA Web workflow differentiator.
+
+See `IMAGE-CREDITS.md` for demonstration image provenance. The images are not presented as Harrison customer projects.

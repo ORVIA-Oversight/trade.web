@@ -12,6 +12,8 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://trade.web.orvia.org.uk/" />
   <meta name="theme-color" content="#102A33" />
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+  <link rel="dns-prefetch" href="//images.unsplash.com" />
   <link rel="stylesheet" href="/assets/styles.css" />
 </head>
 <body>
@@ -52,21 +54,11 @@
   </header>
 
   <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-visual" aria-hidden="true">
-        <div class="pipe pipe--one"></div>
-        <div class="pipe pipe--two"></div>
-        <div class="boiler-card">
-          <div class="boiler-card__screen">21.0°</div>
-          <div class="boiler-card__dial"></div>
-          <div class="boiler-card__pipe boiler-card__pipe--1"></div>
-          <div class="boiler-card__pipe boiler-card__pipe--2"></div>
-          <div class="boiler-card__pipe boiler-card__pipe--3"></div>
-          <div class="boiler-card__pipe boiler-card__pipe--4"></div>
-        </div>
-        <div class="hero-tool hero-tool--one"></div>
-        <div class="hero-tool hero-tool--two"></div>
-      </div>
+    <section class="hero hero--photo" aria-labelledby="hero-title">
+      <picture class="hero-photo" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1753605788101-04d1e653e74a?auto=format&fit=crop&fm=webp&q=78&w=1800" srcset="https://images.unsplash.com/photo-1753605788101-04d1e653e74a?auto=format&fit=crop&fm=webp&q=74&w=480 480w, https://images.unsplash.com/photo-1753605788101-04d1e653e74a?auto=format&fit=crop&fm=webp&q=74&w=768 768w, https://images.unsplash.com/photo-1753605788101-04d1e653e74a?auto=format&fit=crop&fm=webp&q=74&w=1200 1200w, https://images.unsplash.com/photo-1753605788101-04d1e653e74a?auto=format&fit=crop&fm=webp&q=74&w=1800 1800w" sizes="100vw" width="1800" height="1200" alt="" fetchpriority="high" decoding="async" />
+      </picture>
+      <div class="hero-photo-overlay" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Plumbing & Heating • South Yorkshire</p>
@@ -74,17 +66,18 @@
           <p class="hero-lede">From leaking taps and heating problems to boiler replacements and complete bathroom projects, Harrison Heating & Plumbing demonstrates how a modern trade website can make it straightforward for customers to explain the job and request a callback.</p>
           <div class="hero-actions">
             <a class="btn btn--primary btn--large" href="#quote">Request a quote</a>
-            <button class="btn btn--dark btn--large demo-action" type="button" data-demo-action="call">Call now</button>
+            <button class="btn btn--hero-secondary btn--large demo-action" type="button" data-demo-action="call">Call now</button>
           </div>
-          <button class="text-action demo-action" type="button" data-demo-action="whatsapp">Send us photos on WhatsApp <span aria-hidden="true">↗</span></button>
+          <button class="text-action text-action--hero demo-action" type="button" data-demo-action="whatsapp">Send us photos on WhatsApp <span aria-hidden="true">↗</span></button>
+          <div class="hero-demo-note"><span>DEMONSTRATION IMAGE</span><small>Licensed photography used to demonstrate the design — not a Harrison project.</small></div>
         </div>
         <div class="hero-panel" aria-label="Demonstration service overview">
-          <span class="hero-panel__label">DEMONSTRATION SITE</span>
+          <span class="hero-panel__label">WORKING DEMONSTRATION</span>
           <p class="hero-panel__big">Clear job details in.<br />Useful callbacks out.</p>
           <div class="hero-panel__rows">
             <span><b>01</b> Choose the job</span>
             <span><b>02</b> Add details + photos</span>
-            <span><b>03</b> Business follows it up</span>
+            <span><b>03</b> Enquiry reaches the Job Desk</span>
           </div>
         </div>
       </div>
@@ -99,11 +92,23 @@
           </div>
           <p>Choose the closest match and we’ll pre-fill the enquiry form for this demonstration.</p>
         </div>
-        <div class="service-grid">
-          <article class="service-card"><span class="service-no">01</span><h3>Plumbing Repairs</h3><p>Leaks, taps, toilets, pipework and general repairs.</p><button class="card-link service-choice" data-job="Plumbing Repair">Get a quote <span>→</span></button></article>
-          <article class="service-card"><span class="service-no">02</span><h3>Heating</h3><p>Radiators, heating faults and system improvements.</p><button class="card-link service-choice" data-job="Heating">Get a quote <span>→</span></button></article>
-          <article class="service-card"><span class="service-no">03</span><h3>Boilers</h3><p>Boiler faults, replacements and servicing enquiries.</p><button class="card-link service-choice" data-job="Boiler">Get a quote <span>→</span></button></article>
-          <article class="service-card"><span class="service-no">04</span><h3>Bathrooms</h3><p>Plumbing installation and complete bathroom projects.</p><button class="card-link service-choice" data-job="Bathroom">Get a quote <span>→</span></button></article>
+        <div class="service-grid service-grid--editorial">
+          <article class="service-card service-card--image">
+            <div class="service-image"><img src="https://images.unsplash.com/photo-1694827893591-af9b80361599?auto=format&fit=crop&fm=webp&q=74&w=768" srcset="https://images.unsplash.com/photo-1694827893591-af9b80361599?auto=format&fit=crop&fm=webp&q=74&w=480 480w, https://images.unsplash.com/photo-1694827893591-af9b80361599?auto=format&fit=crop&fm=webp&q=74&w=768 768w, https://images.unsplash.com/photo-1694827893591-af9b80361599?auto=format&fit=crop&fm=webp&q=74&w=1200 1200w, https://images.unsplash.com/photo-1694827893591-af9b80361599?auto=format&fit=crop&fm=webp&q=74&w=1800 1800w" sizes="(max-width:768px) 100vw, 25vw" width="900" height="700" loading="lazy" decoding="async" alt="Copper pipework exposed during a plumbing repair demonstration" /><span>DEMONSTRATION IMAGE</span></div>
+            <div class="service-card__body"><span class="service-no">01</span><h3>Plumbing Repairs</h3><p>Leaks, taps, toilets, pipework and general repairs.</p><button class="card-link service-choice" data-job="Plumbing Repair">Get a quote <span>→</span></button></div>
+          </article>
+          <article class="service-card service-card--image service-card--lift">
+            <div class="service-image"><img src="https://images.unsplash.com/photo-1773426373167-dc0247ce6ae9?auto=format&fit=crop&fm=webp&q=74&w=768" srcset="https://images.unsplash.com/photo-1773426373167-dc0247ce6ae9?auto=format&fit=crop&fm=webp&q=74&w=480 480w, https://images.unsplash.com/photo-1773426373167-dc0247ce6ae9?auto=format&fit=crop&fm=webp&q=74&w=768 768w, https://images.unsplash.com/photo-1773426373167-dc0247ce6ae9?auto=format&fit=crop&fm=webp&q=74&w=1200 1200w, https://images.unsplash.com/photo-1773426373167-dc0247ce6ae9?auto=format&fit=crop&fm=webp&q=74&w=1800 1800w" sizes="(max-width:768px) 100vw, 25vw" width="900" height="700" loading="lazy" decoding="async" alt="Modern radiator in a warm interior used as demonstration imagery" /><span>DEMONSTRATION IMAGE</span></div>
+            <div class="service-card__body"><span class="service-no">02</span><h3>Heating</h3><p>Radiators, heating faults and system improvements.</p><button class="card-link service-choice" data-job="Heating">Get a quote <span>→</span></button></div>
+          </article>
+          <article class="service-card service-card--image">
+            <div class="service-image"><img src="https://images.unsplash.com/photo-1650551182956-47efa0f90b64?auto=format&fit=crop&fm=webp&q=74&w=768" srcset="https://images.unsplash.com/photo-1650551182956-47efa0f90b64?auto=format&fit=crop&fm=webp&q=74&w=480 480w, https://images.unsplash.com/photo-1650551182956-47efa0f90b64?auto=format&fit=crop&fm=webp&q=74&w=768 768w, https://images.unsplash.com/photo-1650551182956-47efa0f90b64?auto=format&fit=crop&fm=webp&q=74&w=1200 1200w, https://images.unsplash.com/photo-1650551182956-47efa0f90b64?auto=format&fit=crop&fm=webp&q=74&w=1800 1800w" sizes="(max-width:768px) 100vw, 25vw" width="900" height="700" loading="lazy" decoding="async" alt="Heating system pipework and gauges used as demonstration imagery" /><span>DEMONSTRATION IMAGE</span></div>
+            <div class="service-card__body"><span class="service-no">03</span><h3>Boilers</h3><p>Boiler faults, replacements and servicing enquiries.</p><button class="card-link service-choice" data-job="Boiler">Get a quote <span>→</span></button></div>
+          </article>
+          <article class="service-card service-card--image service-card--lift">
+            <div class="service-image"><img src="https://images.unsplash.com/photo-1774716925801-cad665240e12?auto=format&fit=crop&fm=webp&q=74&w=768" srcset="https://images.unsplash.com/photo-1774716925801-cad665240e12?auto=format&fit=crop&fm=webp&q=74&w=480 480w, https://images.unsplash.com/photo-1774716925801-cad665240e12?auto=format&fit=crop&fm=webp&q=74&w=768 768w, https://images.unsplash.com/photo-1774716925801-cad665240e12?auto=format&fit=crop&fm=webp&q=74&w=1200 1200w, https://images.unsplash.com/photo-1774716925801-cad665240e12?auto=format&fit=crop&fm=webp&q=74&w=1800 1800w" sizes="(max-width:768px) 100vw, 25vw" width="900" height="700" loading="lazy" decoding="async" alt="Contemporary bathroom used as demonstration imagery" /><span>DEMONSTRATION IMAGE</span></div>
+            <div class="service-card__body"><span class="service-no">04</span><h3>Bathrooms</h3><p>Plumbing installation and complete bathroom projects.</p><button class="card-link service-choice" data-job="Bathroom">Get a quote <span>→</span></button></div>
+          </article>
         </div>
       </div>
     </section>
@@ -130,16 +135,25 @@
           <p class="section-copy">A real trade site can make service areas obvious and help customers check coverage before they submit an enquiry.</p>
           <button class="btn btn--outline postcode-trigger" type="button">Check your postcode</button>
         </div>
-        <div class="area-map" role="img" aria-label="Stylised map of South Yorkshire service areas">
-          <span class="map-line map-line--a"></span><span class="map-line map-line--b"></span><span class="map-line map-line--c"></span>
-          <span class="map-pin map-pin--sheffield">Sheffield</span>
-          <span class="map-pin map-pin--barnsley">Barnsley</span>
-          <span class="map-pin map-pin--rotherham">Rotherham</span>
-          <span class="map-pin map-pin--doncaster">Doncaster</span>
-          <span class="map-pin map-pin--penistone">Penistone</span>
-          <span class="map-pin map-pin--stocksbridge">Stocksbridge</span>
-          <span class="map-pin map-pin--chapeltown">Chapeltown</span>
-          <span class="map-pin map-pin--wombwell">Wombwell</span>
+        <div class="area-map area-map--svg" role="img" aria-label="Stylised geographic diagram of South Yorkshire highlighting Sheffield, Barnsley, Rotherham and Doncaster with nearby areas">
+          <svg viewBox="0 0 760 520" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="land" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#eef4f2"/><stop offset="1" stop-color="#d4e0df"/></linearGradient>
+              <filter id="pinShadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#102A33" flood-opacity=".14"/></filter>
+            </defs>
+            <path class="map-shape" d="M137 112 243 62 367 87 454 67 598 127 649 214 622 304 674 371 589 451 455 446 368 489 247 450 129 403 93 308 119 224 86 162Z" fill="url(#land)"/>
+            <path class="map-route" d="M175 155C255 188 316 212 376 264S503 346 587 294"/>
+            <path class="map-route map-route--secondary" d="M212 382C293 349 353 299 398 213S513 151 592 181"/>
+            <g class="map-node major" transform="translate(349 332)"><circle r="13"/><text x="20" y="5">Sheffield</text></g>
+            <g class="map-node major" transform="translate(337 213)"><circle r="13"/><text x="20" y="5">Barnsley</text></g>
+            <g class="map-node major" transform="translate(436 286)"><circle r="13"/><text x="20" y="5">Rotherham</text></g>
+            <g class="map-node major" transform="translate(570 194)"><circle r="13"/><text x="20" y="5">Doncaster</text></g>
+            <g class="map-node minor" transform="translate(202 245)"><circle r="7"/><text x="15" y="4">Penistone</text></g>
+            <g class="map-node minor" transform="translate(237 176)"><circle r="7"/><text x="15" y="4">Stocksbridge</text></g>
+            <g class="map-node minor" transform="translate(315 272)"><circle r="7"/><text x="15" y="4">Chapeltown</text></g>
+            <g class="map-node minor" transform="translate(391 226)"><circle r="7"/><text x="15" y="4">Wombwell</text></g>
+          </svg>
+          <div class="map-key"><span><i class="major-dot"></i>Primary example areas</span><span><i class="minor-dot"></i>Nearby example areas</span></div>
         </div>
       </div>
     </section>
@@ -148,14 +162,29 @@
       <div class="container">
         <div class="section-heading section-heading--split">
           <div><p class="kicker">Visual proof, honestly presented</p><h2 id="work-title">Recent work, demonstrated properly.</h2></div>
-          <p>These are demonstration project visuals, not claims about work completed by a real Harrison business.</p>
+          <p>These licensed photographs demonstrate how real project photography could be presented. They are not claims about work completed by a real Harrison business.</p>
         </div>
-        <div class="work-grid">
-          <button class="work-card work-card--large" data-lightbox="Boiler installation" aria-label="Open Boiler installation demonstration visual"><span class="work-art work-art--boiler"></span><span class="work-meta"><b>Boiler installation</b><small>DEMONSTRATION PROJECT IMAGE</small></span></button>
-          <button class="work-card" data-lightbox="Bathroom plumbing" aria-label="Open Bathroom plumbing demonstration visual"><span class="work-art work-art--bathroom"></span><span class="work-meta"><b>Bathroom plumbing</b><small>DEMONSTRATION PROJECT IMAGE</small></span></button>
-          <button class="work-card" data-lightbox="Radiator replacement" aria-label="Open Radiator replacement demonstration visual"><span class="work-art work-art--radiator"></span><span class="work-meta"><b>Radiator replacement</b><small>DEMONSTRATION PROJECT IMAGE</small></span></button>
-          <button class="work-card" data-lightbox="Emergency repair" aria-label="Open Emergency repair demonstration visual"><span class="work-art work-art--repair"></span><span class="work-meta"><b>Emergency repair</b><small>DEMONSTRATION PROJECT IMAGE</small></span></button>
-          <button class="work-card work-card--wide" data-lightbox="Heating upgrade" aria-label="Open Heating upgrade demonstration visual"><span class="work-art work-art--heating"></span><span class="work-meta"><b>Heating upgrade</b><small>DEMONSTRATION PROJECT IMAGE</small></span></button>
+        <div class="work-grid work-grid--photo">
+          <button class="work-card work-card--large" data-lightbox="Boiler installation" data-image="https://images.unsplash.com/photo-1650551182956-47efa0f90b64?auto=format&fit=crop&fm=webp&q=74&w=1800" data-description="Example layout for a boiler or heating-system installation project. This is licensed demonstration photography, not a Harrison job." aria-label="Open Boiler installation demonstration image">
+            <img src="https://images.unsplash.com/photo-1650551182956-47efa0f90b64?auto=format&fit=crop&fm=webp&q=74&w=900" srcset="https://images.unsplash.com/photo-1650551182956-47efa0f90b64?auto=format&fit=crop&fm=webp&q=74&w=480 480w, https://images.unsplash.com/photo-1650551182956-47efa0f90b64?auto=format&fit=crop&fm=webp&q=74&w=768 768w, https://images.unsplash.com/photo-1650551182956-47efa0f90b64?auto=format&fit=crop&fm=webp&q=74&w=1200 1200w, https://images.unsplash.com/photo-1650551182956-47efa0f90b64?auto=format&fit=crop&fm=webp&q=74&w=1800 1800w" sizes="(max-width:768px) 100vw, 45vw" width="900" height="1200" loading="lazy" decoding="async" alt="Heating pipework and gauges used as demonstration project imagery" />
+            <span class="demo-image-badge">DEMONSTRATION IMAGE</span><span class="work-meta"><b>Boiler installation</b><small>WORK EXAMPLE LAYOUT</small></span>
+          </button>
+          <button class="work-card" data-lightbox="Bathroom plumbing" data-image="https://images.unsplash.com/photo-1774716925801-cad665240e12?auto=format&fit=crop&fm=webp&q=74&w=1800" data-description="Example presentation for a completed bathroom plumbing project. Licensed demonstration photography only." aria-label="Open Bathroom plumbing demonstration image">
+            <img src="https://images.unsplash.com/photo-1774716925801-cad665240e12?auto=format&fit=crop&fm=webp&q=74&w=900" srcset="https://images.unsplash.com/photo-1774716925801-cad665240e12?auto=format&fit=crop&fm=webp&q=74&w=480 480w, https://images.unsplash.com/photo-1774716925801-cad665240e12?auto=format&fit=crop&fm=webp&q=74&w=768 768w, https://images.unsplash.com/photo-1774716925801-cad665240e12?auto=format&fit=crop&fm=webp&q=74&w=1200 1200w, https://images.unsplash.com/photo-1774716925801-cad665240e12?auto=format&fit=crop&fm=webp&q=74&w=1800 1800w" sizes="(max-width:768px) 100vw, 27vw" width="900" height="700" loading="lazy" decoding="async" alt="Contemporary bathroom used as demonstration project imagery" />
+            <span class="demo-image-badge">DEMONSTRATION IMAGE</span><span class="work-meta"><b>Bathroom plumbing</b><small>WORK EXAMPLE LAYOUT</small></span>
+          </button>
+          <button class="work-card" data-lightbox="Radiator replacement" data-image="https://images.unsplash.com/photo-1773426373167-dc0247ce6ae9?auto=format&fit=crop&fm=webp&q=74&w=1800" data-description="Example presentation for a radiator replacement or heating improvement project. Licensed demonstration photography only." aria-label="Open Radiator replacement demonstration image">
+            <img src="https://images.unsplash.com/photo-1773426373167-dc0247ce6ae9?auto=format&fit=crop&fm=webp&q=74&w=900" srcset="https://images.unsplash.com/photo-1773426373167-dc0247ce6ae9?auto=format&fit=crop&fm=webp&q=74&w=480 480w, https://images.unsplash.com/photo-1773426373167-dc0247ce6ae9?auto=format&fit=crop&fm=webp&q=74&w=768 768w, https://images.unsplash.com/photo-1773426373167-dc0247ce6ae9?auto=format&fit=crop&fm=webp&q=74&w=1200 1200w, https://images.unsplash.com/photo-1773426373167-dc0247ce6ae9?auto=format&fit=crop&fm=webp&q=74&w=1800 1800w" sizes="(max-width:768px) 100vw, 27vw" width="900" height="700" loading="lazy" decoding="async" alt="Modern radiator used as demonstration project imagery" />
+            <span class="demo-image-badge">DEMONSTRATION IMAGE</span><span class="work-meta"><b>Radiator replacement</b><small>WORK EXAMPLE LAYOUT</small></span>
+          </button>
+          <button class="work-card" data-lightbox="Leak / repair detail" data-image="https://images.unsplash.com/photo-1694827893591-af9b80361599?auto=format&fit=crop&fm=webp&q=74&w=1800" data-description="Close-up example of pipework that could support a repair case study or project update. Licensed demonstration photography only." aria-label="Open Leak or repair demonstration image">
+            <img src="https://images.unsplash.com/photo-1694827893591-af9b80361599?auto=format&fit=crop&fm=webp&q=74&w=900" srcset="https://images.unsplash.com/photo-1694827893591-af9b80361599?auto=format&fit=crop&fm=webp&q=74&w=480 480w, https://images.unsplash.com/photo-1694827893591-af9b80361599?auto=format&fit=crop&fm=webp&q=74&w=768 768w, https://images.unsplash.com/photo-1694827893591-af9b80361599?auto=format&fit=crop&fm=webp&q=74&w=1200 1200w, https://images.unsplash.com/photo-1694827893591-af9b80361599?auto=format&fit=crop&fm=webp&q=74&w=1800 1800w" sizes="(max-width:768px) 100vw, 27vw" width="900" height="1200" loading="lazy" decoding="async" alt="Copper pipework used as demonstration repair imagery" />
+            <span class="demo-image-badge">DEMONSTRATION IMAGE</span><span class="work-meta"><b>Leak / repair detail</b><small>WORK EXAMPLE LAYOUT</small></span>
+          </button>
+          <button class="work-card work-card--wide" data-lightbox="Heating upgrade" data-image="https://images.unsplash.com/photo-1723902499498-dfd905f25cce?auto=format&fit=crop&fm=webp&q=74&w=1800" data-description="Example image treatment for a wider home plumbing or heating upgrade. Licensed demonstration photography only." aria-label="Open Heating upgrade demonstration image">
+            <img src="https://images.unsplash.com/photo-1723902499498-dfd905f25cce?auto=format&fit=crop&fm=webp&q=74&w=1200" srcset="https://images.unsplash.com/photo-1723902499498-dfd905f25cce?auto=format&fit=crop&fm=webp&q=74&w=480 480w, https://images.unsplash.com/photo-1723902499498-dfd905f25cce?auto=format&fit=crop&fm=webp&q=74&w=768 768w, https://images.unsplash.com/photo-1723902499498-dfd905f25cce?auto=format&fit=crop&fm=webp&q=74&w=1200 1200w, https://images.unsplash.com/photo-1723902499498-dfd905f25cce?auto=format&fit=crop&fm=webp&q=74&w=1800 1800w" sizes="(max-width:768px) 100vw, 55vw" width="1400" height="900" loading="lazy" decoding="async" alt="Domestic kitchen sink used as demonstration plumbing imagery" />
+            <span class="demo-image-badge">DEMONSTRATION IMAGE</span><span class="work-meta"><b>Heating upgrade</b><small>WORK EXAMPLE LAYOUT</small></span>
+          </button>
         </div>
       </div>
     </section>
@@ -166,13 +195,13 @@
           <div><p class="kicker kicker--light">Trust without pretending</p><h2 id="trust-title">Put your credentials where customers expect to see them.</h2></div>
           <p>A live customer website can display verified registrations, memberships, insurance and guarantees supplied by the business.</p>
         </div>
-        <div class="trust-grid">
-          <div class="trust-item"><span>01</span><b>Registrations</b></div>
-          <div class="trust-item"><span>02</span><b>Insurance</b></div>
-          <div class="trust-item"><span>03</span><b>Memberships</b></div>
-          <div class="trust-item"><span>04</span><b>Guarantees</b></div>
+        <div class="trust-grid trust-grid--polished">
+          <div class="trust-item"><span class="trust-icon" aria-hidden="true">R</span><div><small>BUSINESS EVIDENCE</small><b>Registrations</b><p>Verified registrations supplied by the real business.</p></div></div>
+          <div class="trust-item"><span class="trust-icon" aria-hidden="true">I</span><div><small>COVER IN PLACE</small><b>Insurance</b><p>Current insurance information where the business chooses to display it.</p></div></div>
+          <div class="trust-item"><span class="trust-icon" aria-hidden="true">M</span><div><small>PROFESSIONAL LINKS</small><b>Memberships</b><p>Relevant memberships that can be checked and evidenced.</p></div></div>
+          <div class="trust-item"><span class="trust-icon" aria-hidden="true">G</span><div><small>CUSTOMER ASSURANCE</small><b>Guarantees</b><p>Clear guarantee information supplied by the business.</p></div></div>
         </div>
-        <p class="disclaimer">Demonstration placeholders — not claims of real accreditation.</p>
+        <p class="disclaimer"><strong>Demonstration only.</strong> In a live customer build, this area displays the business's verified registrations, insurance, memberships and guarantees. No accreditation is claimed here.</p>
       </div>
     </section>
 
@@ -253,14 +282,31 @@
           <details><summary>Can this connect to WhatsApp?</summary><p>Yes. In a live customer build, WhatsApp can be linked to the business's real number or approved messaging workflow.</p></details>
           <details><summary>Can it connect to a real CRM?</summary><p>Yes, where the CRM provides an appropriate integration method. ORVIA Web can design the handoff around the customer's existing workflow.</p></details>
           <details><summary>Can ORVIA manage the website after launch?</summary><p>Yes. Ongoing hosting, edits and managed website support can be included as part of the ORVIA Web service.</p></details>
-          <details><summary>Can ORVIA build it in WordPress or Wix?</summary><p>Yes. ORVIA Web can build using established platforms where appropriate. We normally recommend the approach that gives the customer the best combination of flexibility, ownership and future growth.</p></details>
+          <details><summary>Do I have to use this technology?</summary><p>No. ORVIA Web can build using WordPress, Wix, Shopify, Squarespace and other established platforms where they are the right fit. We usually recommend the approach that gives you the best balance of flexibility, ownership and room to grow.</p></details>
         </div>
       </div>
     </section>
 
+    <section class="workflow-proof section section--stone" aria-labelledby="workflow-proof-title">
+      <div class="container workflow-proof__grid">
+        <div>
+          <p class="kicker">Website + practical business tool</p>
+          <h2 id="workflow-proof-title">A website can do more than sit there.</h2>
+          <p class="section-copy">That is the difference between simply having a website and having a website built around how your business actually works.</p>
+        </div>
+        <ol class="workflow-chain" aria-label="Example customer to business workflow">
+          <li><span>01</span><b>Customer visits website</b></li>
+          <li><span>02</span><b>Describes job</b></li>
+          <li><span>03</span><b>Uploads photos</b></li>
+          <li><span>04</span><b>Enquiry arrives in your dashboard</b></li>
+          <li><span>05</span><b>You follow it up</b></li>
+        </ol>
+      </div>
+    </section>
+
     <section class="sales-panel section" id="contact" aria-labelledby="sales-title">
-      <div class="container sales-panel__inner">
-        <div><p class="kicker kicker--light">ORVIA WEB</p><h2 id="sales-title">Like the way this works?</h2><p>This is a working ORVIA Web demonstration. The business is fictional. The website, enquiry journey and web app demonstrate what we can build for a real trade business.</p></div>
+      <div class="container sales-panel__inner sales-panel__inner--phase2">
+        <div><p class="kicker kicker--light">ORVIA WEB</p><h2 id="sales-title">Like the way this works?</h2><p>This is a working ORVIA Web demonstration. Harrison Heating & Plumbing is fictional, but the website, enquiry journey and business dashboard show what we can build for a real trade business.</p><p class="sales-tagline">YOU RUN THE BUSINESS.<br />WE'LL TAKE CARE OF THE WEB.</p></div>
         <div class="sales-panel__actions"><a class="btn btn--light btn--large" href="https://web.orvia.org.uk/start?demo=trade">Build something like this</a><a class="btn btn--ghost-light btn--large" href="https://web.orvia.org.uk/">View ORVIA Web</a></div>
       </div>
     </section>
@@ -298,13 +344,15 @@
       <span id="postcode-check-error" class="field-error"></span>
       <button class="btn btn--primary" type="submit">Check coverage</button>
     </form>
-    <p id="postcode-result" class="modal-result" hidden>DEMONSTRATION: In a live customer build this could check whether the business covers your location.</p>
+    <div id="postcode-result" class="postcode-result" hidden><span class="postcode-result__check" aria-hidden="true">✓</span><div><strong id="postcode-result-title">DEMONSTRATION SERVICE AREA</strong><p id="postcode-result-copy">In a live customer build, this can check whether a customer is inside your actual service area before the enquiry is submitted.</p></div></div>
   </dialog>
 
-  <dialog id="lightbox" class="lightbox">
+  <dialog id="lightbox" class="lightbox" aria-labelledby="lightbox-title">
     <button class="modal-close lightbox-close" type="button" aria-label="Close image">×</button>
-    <div id="lightbox-art" class="lightbox-art"></div>
-    <div class="lightbox-caption"><strong id="lightbox-title"></strong><span>DEMONSTRATION PROJECT IMAGE</span></div>
+    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image">‹</button>
+    <div class="lightbox-media"><img id="lightbox-image" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="" width="1600" height="1000" /></div>
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image">›</button>
+    <div class="lightbox-caption"><div><strong id="lightbox-title"></strong><p id="lightbox-description"></p></div><span>DEMONSTRATION IMAGE</span></div>
   </dialog>
 
   <script src="/assets/app.js" defer></script>
