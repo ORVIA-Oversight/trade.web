@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harrison Job Desk — ORVIA Web Demonstration</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="theme-color" content="#102A33" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <link rel="stylesheet" href="/assets/dashboard.css" />
+</head>
+<body class="dashboard-body">
+  <a class="skip-link" href="#dashboard-main">Skip to dashboard</a>
+  <div class="demo-bar" role="region" aria-label="ORVIA Web demonstration notice">
+    <div class="container demo-bar__inner"><div class="demo-bar__copy"><strong>ORVIA WEB DEMONSTRATION</strong><span>Session-scoped demo data only — no fictional business receives anything.</span></div><div class="demo-bar__actions"><a class="btn btn--small btn--light" href="/">View website</a><a class="btn btn--small btn--ghost-light" href="https://web.orvia.org.uk/start?demo=trade">Build something like this</a></div></div>
+  </div>
+  <div class="dashboard-shell">
+    <aside class="dashboard-sidebar">
+      <a class="desk-brand" href="/"><span class="brand-mark">H</span><span><b>HARRISON</b><small>JOB DESK</small></span></a>
+      <nav aria-label="Job Desk navigation">
+        <button class="desk-nav active" data-view="dashboard"><span>⌂</span>Dashboard</button>
+        <button class="desk-nav" data-view="enquiries"><span>↳</span>New Enquiries</button>
+        <button class="desk-nav" data-view="quotes"><span>£</span>Quotes</button>
+        <button class="desk-nav" data-view="followups"><span>◷</span>Follow-ups</button>
+        <button class="desk-nav" data-view="settings"><span>⚙</span>Settings</button>
+      </nav>
+      <div class="sidebar-note"><strong>DEMO MODE</strong><p>Records created from the public demo exist only in this browser session.</p></div>
+      <a class="back-site" href="/">← Back to trade website</a>
+    </aside>
+
+    <main class="dashboard-main" id="dashboard-main">
+      <header class="desk-header"><div><p class="desk-eyebrow">Harrison Heating & Plumbing</p><h1 id="view-title">Dashboard</h1></div><div class="desk-user"><span class="status-dot"></span><div><b>Demo workspace</b><small>Not connected to a live CRM</small></div></div></header>
+
+      <section class="dashboard-view" data-view-panel="dashboard">
+        <div class="metric-grid">
+          <article><span>NEW ENQUIRIES</span><strong id="metric-new">4</strong><small>including this session</small></article>
+          <article><span>AWAITING CALLBACK</span><strong id="metric-callback">3</strong><small>demo workload</small></article>
+          <article><span>QUOTES TO PREPARE</span><strong id="metric-quotes">2</strong><small>local demo state</small></article>
+          <article><span>RECENT ACTIVITY</span><strong id="metric-activity">6</strong><small>demonstration events</small></article>
+        </div>
+        <div class="desk-section-head"><div><p class="desk-eyebrow">Inbox</p><h2>New enquiries</h2></div><span class="demo-pill">FICTIONAL DEMO RECORDS</span></div>
+        <div id="enquiry-list" class="enquiry-list"></div>
+      </section>
+
+      <section class="dashboard-view" data-view-panel="enquiries" hidden>
+        <div class="desk-section-head"><div><p class="desk-eyebrow">Customer contact</p><h2>New enquiries</h2><p>Open an enquiry, mark it contacted or prepare a local demonstration quote.</p></div><span class="demo-pill">SESSION-SCOPED</span></div>
+        <div id="enquiry-list-all" class="enquiry-list"></div>
+      </section>
+
+      <section class="dashboard-view" data-view-panel="quotes" hidden>
+        <div class="desk-section-head"><div><p class="desk-eyebrow">Commercial follow-up</p><h2>Quotes</h2><p>Quotes created here are demonstration data and are not sent anywhere.</p></div><span class="demo-pill">DEMO ONLY</span></div>
+        <div id="quotes-list" class="quote-list"></div>
+      </section>
+
+      <section class="dashboard-view" data-view-panel="followups" hidden>
+        <div class="desk-section-head"><div><p class="desk-eyebrow">Keep work moving</p><h2>Follow-ups</h2></div></div>
+        <div class="empty-state"><span>◷</span><h3>No live follow-up automation is connected.</h3><p>A real build could surface customers due a callback, outstanding quotes and agreed follow-up dates.</p></div>
+      </section>
+
+      <section class="dashboard-view" data-view-panel="settings" hidden>
+        <div class="desk-section-head"><div><p class="desk-eyebrow">Demonstration</p><h2>Settings</h2></div></div>
+        <div class="settings-card"><h3>Browser-session data</h3><p>New records created through this demo are stored in <code>sessionStorage</code> and disappear when the browser session ends. Photographs are never persisted — only the number and names of selected files are shown in the demo record.</p><button class="btn btn--outline" id="clear-session">Clear my demo data</button></div>
+      </section>
+    </main>
+  </div>
+
+  <dialog id="record-dialog" class="modal record-dialog"><button class="modal-close" aria-label="Close dialog">×</button><div id="record-dialog-content"></div></dialog>
+  <dialog id="quote-dialog" class="modal quote-dialog"><button class="modal-close" aria-label="Close dialog">×</button><p class="kicker">Create demo quote</p><h2>Create quote</h2><form id="quote-builder"><input type="hidden" id="quote-ref" /><label>Job description<textarea id="quote-description" rows="3" required></textarea></label><div class="quote-fields"><label>Labour (£)<input id="quote-labour" inputmode="decimal" value="0" /></label><label>Materials (£)<input id="quote-materials" inputmode="decimal" value="0" /></label><label>Call-out / attendance (£)<input id="quote-callout" inputmode="decimal" value="0" /></label><label>Other (£)<input id="quote-other" inputmode="decimal" value="0" /></label></div><label>Notes<textarea id="quote-notes" rows="2"></textarea></label><div class="quote-total"><span>Total</span><strong id="quote-total">£0.00</strong></div><button class="btn btn--primary" type="submit">Create demo quote</button></form></dialog>
+  <dialog id="action-dialog" class="modal"><button class="modal-close" aria-label="Close dialog">×</button><p class="kicker">Demonstration action</p><h2>External action disabled.</h2><p>Seeded records use fictional data. This demonstration does not call or message real people.</p><button class="btn btn--dark modal-ok">Got it</button></dialog>
+
+  <script src="/assets/dashboard.js" defer></script>
+</body>
+</html>

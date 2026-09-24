@@ -1,0 +1,9 @@
+{
+  "name": "orvia-web-showcase",
+  "private": true,
+  "version": "1.0.0",
+  "description": "ORVIA Web showcase monorepo",
+  "scripts": {
+    "serve:trade": "python3 -m http.server 4173 --directory apps/trade"
+  }
+}
